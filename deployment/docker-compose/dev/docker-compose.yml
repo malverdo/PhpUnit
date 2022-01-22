@@ -20,6 +20,8 @@ services:
         # должны совпадать с путями из nginx
         volumes:
             - /home/${HOMENAME}/${ROOTNAMEPROJECT}/${NAMEPROJECT}:/home/apps/${NAMEPROJECT}
+        environment:
+            - PHP_IDE_CONFIG=serverName=phpunit
     postgres:
         build:
             context: /home/${HOMENAME}/${ROOTNAMEPROJECT}/deployment/docker/dev/postgres
