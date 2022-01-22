@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Tests;
+namespace App\Tests\expectException;
 
 
-use PHPUnit\Framework\TestCase;
 use LengthException;
+use PHPUnit\Framework\TestCase;
 
 class ExceptionTest extends TestCase
 {
